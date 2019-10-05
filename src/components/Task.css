@@ -34,13 +34,19 @@
     padding-top: 2%
 }
 
+.iconInButton {
+    margin-right: 6px;
+
+
+}
+
 .startDate {
     flex-basis: 25%
 }
 
 .expiredTask {
     color: white;
-    background-color: red;
+    background-color: rgb(218, 54, 54);
     border-radius: 5px;
     padding: 0 3px;
     margin: 0 10px;

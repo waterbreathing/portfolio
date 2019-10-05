@@ -63,14 +63,14 @@
 }
 
 .dialogue p:nth-child(odd) {
-    background-color: rgba(255, 145, 0, 0.822);
+    background-color: rgba(207, 140, 53, 0.959);
     align-self: flex-start;
 
 
 }
 
 .dialogue p:nth-child(even) {
-    background-color: rgba(89, 0, 255, 0.822);
+    background-color: rgba(79, 77, 184, 0.822);
     align-self: flex-end;
     margin-left: 10%;
     text-align: right;

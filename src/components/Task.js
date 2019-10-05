@@ -1,6 +1,6 @@
 import React from 'react';
 import './Task.css'
-
+import { FiThumbsUp, FiTrash, FiEdit3 } from 'react-icons/fi';
 
 
 const Task = (props) => {
@@ -51,11 +51,11 @@ const Task = (props) => {
 
 
             {!completed ? <p>
-                <button className='btnActiveTodos ' onClick={() => props.completeTask(id)}>completed</button>
-                <button className='btnActiveTodos ' onClick={() => props.removeTask(id)}>remove</button>
-                <button className='btnActiveTodos ' onClick={() => props.editTask(id)}>edit</button>
+                <button className='btnActiveTodos ' onClick={() => props.completeTask(id)}><FiThumbsUp className='iconInButton' /> completed</button>
+                <button className='btnActiveTodos ' onClick={() => props.removeTask(id)}><FiTrash className='iconInButton' /> remove</button>
+                <button className='btnActiveTodos ' onClick={() => props.editTask(id)}><FiEdit3 className='iconInButton' /> edit</button>
 
-            </p> : <button className='btnActiveTodos' onClick={() => props.removeTask(id)}>remove</button>}
+            </p> : <button className='btnActiveTodos' onClick={() => props.removeTask(id)}><FiTrash className='iconInButton' />remove</button>}
 
             <br />
         </div >
