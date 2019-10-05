@@ -1,0 +1,23 @@
+.loadMoreUsers {
+    background-color: #D99982;
+    padding: 20px 0;
+    color: #38748C;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.loadMoreUsers:hover {
+    background-color: #BF6363;
+    color: #F2E1C2;
+
+}
+
+.disclaimer {
+
+    background-color: rgba(242, 209, 148, 0.863);
+    text-align: justify;
+    margin-top: 2%;
+    padding: 10px 20px;
+}

@@ -1,0 +1,83 @@
+.addTaskStyle {
+    padding: 10px 10px 15px 10px;
+    /* background-color: #76B5B0; */
+    background-color: #4E567D
+}
+
+.addTaskHeader {
+    color: black;
+    padding: 10px 0;
+}
+
+.inputBody {
+    font-size: 1.5rem;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.buttonsAndDate {
+    margin-top: 10px;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+[value='priority'] {
+    margin-right: 20px;
+}
+
+[value='deadline'] {
+    margin-right: 5px;
+}
+
+[id='endDate'] {
+    margin-right: 10px;
+}
+
+.btn {
+
+    border-radius: 5px;
+    border: none;
+
+    padding: 5px 3px 3px 3px;
+
+    display: block;
+    font-size: 1rem;
+    margin-top: 10px
+}
+
+
+
+.btn.submit {
+    background-color: #F0DCD7
+}
+
+.btn.submit:hover {
+    background-color: #F49B96
+}
+
+
+.priorityActive {
+
+    color: black;
+    background-color: #F49B96;
+}
+
+.priorityInactive {
+    color: black
+}
+
+/* @media (max-width:375px) {
+
+    .btn {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+} */

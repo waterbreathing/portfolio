@@ -1,26 +1,158 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, NavLink } from 'react-router-dom';
+
 import './App.css';
+import './components/TodoTasks';
+import TodoTasks from './components/TodoTasks';
+import CompletedTasks from './components/CompletedTasks';
+import AddTask from './components/AddTask'
+import Header from './components/Header'
+import FetchAPI from './components/FetchAPI'
+import AboutMe from './components/AboutMe'
 
 class App extends Component {
+
+  state = {
+    tasks: [
+      {
+        id: 1,
+        startDate: '2019-09-01',
+        endDate: '2019-12-02',
+        deadline: true,
+        priority: false,
+        body: 'Book a flight to Tokyo',
+        completed: false,
+        edit: true,
+      },
+      {
+        id: 2,
+        startDate: '2019-01-15',
+        endDate: '2019-09-29',
+        deadline: true,
+        priority: false,
+        body: 'Compose a kind of folk trance music',
+        completed: false,
+        edit: true,
+      },
+      {
+        id: 3,
+        startDate: '2019-07-15',
+        endDate: '2019-07-16',
+        deadline: false,
+        priority: true,
+        body: 'Extend the gym subscription',
+        completed: true,
+        edit: true
+      }
+    ],
+    edition: false,
+    taskToEdit: '',
+    newTask: {
+      id: 7,
+      startDate: new Date().toISOString().slice(0, 10),
+      endDate: new Date().toISOString().slice(0, 10),
+      deadline: false,
+      priority: false,
+      body: '',
+      completed: false,
+      edit: false
+
+    }
+  };
+
+
+  completeTask = (id) => {
+    //    console.log('remove ' + id)
+
+    const tasks = this.state.tasks.map(task => {
+      if (task.id === id) {
+        task.completed = !task.completed
+        task.endDate = new Date().toISOString().slice(0, 10)
+        return task
+      }
+      return task
+    }
+    )
+    this.setState({
+      tasks
+    })
+
+  }
+
+
+  removeTask = (id) => {
+    const tasks = this.state.tasks.filter(task => task.id !== id)
+
+    this.setState({
+      tasks
+    })
+  }
+
+  addTask = (element) => {
+    const tasks = [...this.state.tasks, element]
+
+    this.setState({
+      tasks,
+      edition: false,
+      taskToEdit: ''
+    })
+  }
+
+  editTask = (id) => {
+
+    if (this.state.edition) { return }
+
+    console.log('APP editTask ' + id)
+    // const taskToEdit = this.state.tasks.filter(task => task.id === id);
+    const taskIndex = this.state.tasks.findIndex(task => task.id === id);
+
+    console.log(taskIndex)
+    this.setState({
+      // edition: !this.state.edition,
+      edition: true,
+      taskToEdit: this.state.tasks[taskIndex],
+      // tasks: !this.state.tasks[taskIndex].edit
+    })
+
+    window.scrollTo(0, 0);
+    // if (this.state.edition) { return }
+    // else
+    this.removeTask(id)
+
+  }
+
+
+
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+
+      <BrowserRouter>
+        <Header />
+        <Route path='/' exact render={() => (
+          <div className="App">
+            {this.state.edition ? <AddTask addTask={this.addTask} taskToEdit={this.state.taskToEdit} /> :
+              <AddTask addTask={this.addTask} taskToEdit={this.state.newTask}
+              />}
+
+
+            <h2 className='todoTasksHeader' >Todo tasks:</h2>
+            <TodoTasks tasks={this.state.tasks} removeTask={this.removeTask} completeTask={this.completeTask}
+              editTask={this.editTask}
+            />
+            <h2 className='todoTasksHeader'>Completed tasks:</h2>
+            <CompletedTasks tasks={this.state.tasks} removeTask={this.removeTask} />
+
+          </div>
+        )} />
+
+        <Route path='/fetchAPI' component={FetchAPI} />
+        <Route path='/aboutMe' component={AboutMe} />
+
+
+
+
+      </BrowserRouter>
     );
   }
 }

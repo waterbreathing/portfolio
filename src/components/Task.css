@@ -1,0 +1,78 @@
+.todo {
+    padding: 10px;
+    background-color: #8898B8;
+    margin-bottom: 5px;
+    /* border-bottom: 5px dotted#F0DCD7; */
+
+}
+
+.completed {
+    padding: 10px;
+    background-color: #76B5B0;
+    border-bottom: 5px solid white
+}
+
+.taskBody {
+    font-size: 1.4rem;
+    color: #222;
+    padding-bottom: 2%;
+    border-bottom: 2px solid #4E567D
+}
+
+.priorityStyle {
+    color: white;
+    background-color: #F49B96;
+    border-radius: 5px;
+    padding: 0 3px;
+    margin-left: 5px;
+
+}
+
+.taskDates {
+    display: flex;
+    /* justify-content: space-between */
+    padding-top: 2%
+}
+
+.startDate {
+    flex-basis: 25%
+}
+
+.expiredTask {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 0 3px;
+    margin: 0 10px;
+}
+
+.daysLeft {
+    color: white;
+    background-color: #76B5B0;
+    border-radius: 5px;
+    padding: 0 3px;
+    margin: 0 10px;
+}
+
+.btnActiveTodos {
+    display: inline-flex;
+    margin-top: 3%;
+    margin-right: 3%;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    font: inherit;
+    font-size: 90%;
+}
+
+.btnActiveTodos:hover {
+    background-color: #F0DCD7
+}
+
+@media (max-width:414px) {
+
+    .taskDates {
+        flex-direction: column;
+
+    }
+}

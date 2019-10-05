@@ -1,0 +1,141 @@
+.aboutMeContainer {
+    display: flex;
+    /* margin: 0 4%; */
+    background-color: #76B5B0;
+}
+
+.mediaContainer {
+    background-color: transparent;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icons a {
+    text-align: left;
+    display: inline-block;
+    background-color: rgba(2, 2, 2, 0.486);
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    border-radius: 50%;
+}
+
+.aboutMe {
+    color: white;
+    padding: 15px;
+    margin: 0 5%;
+    background-color: rgba(0, 0, 0, 0.493);
+    text-align: justify;
+
+}
+
+.icons {
+
+    color: white;
+    margin: 10% 15%;
+    font-size: 3rem;
+    align-items: flex-start;
+    /* flex-grow: 1; */
+}
+
+
+.dialogue {
+    background-color: rgba(0, 0, 0, 0.479);
+    /* flex-grow: 1; */
+    flex-basis: 60%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center */
+}
+
+.dialogue p {
+    margin: 10px 0 5px 0;
+    color: white;
+    padding: 10px 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.dialogue p:nth-child(odd) {
+    background-color: rgba(255, 145, 0, 0.822);
+    align-self: flex-start;
+
+
+}
+
+.dialogue p:nth-child(even) {
+    background-color: rgba(89, 0, 255, 0.822);
+    align-self: flex-end;
+    margin-left: 10%;
+    text-align: right;
+}
+
+@media (max-width:415px) {
+
+    .aboutMeContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+
+    }
+
+    .mediaContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #76B5B0;
+
+
+    }
+
+    .icons a {
+
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        color: rgba(255, 145, 0, 0.822);
+    }
+
+
+    .dialogue {
+        flex-basis: 90%;
+        background-color: #76B5B0;
+
+    }
+
+    .aboutMe {
+        order: 2;
+    }
+}
+
+@media (max-width:767px) and (orientation:landscape) {
+
+    /* .aboutMeContainer {
+
+        margin: 0;
+
+
+    } */
+
+
+    .mediaContainer {
+
+        background-color: #76B5B0;
+
+    }
+
+
+    .dialogue {
+
+        background-color: #76B5B0;
+
+    }
+
+
+
+}
