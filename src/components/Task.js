@@ -1,6 +1,6 @@
 import React from 'react';
 import './Task.css'
-// import AddTask from './AddTask'
+
 
 
 const Task = (props) => {
@@ -11,11 +11,11 @@ const Task = (props) => {
 
     const calculateDays = (x) => {
         if (x === 1) {
-            // const currentDate = new Date().toISOString().slice(0, 10);
+
             const endPoint = new Date(endDate);
             const startPoint = new Date(startDate);
             const daysLeft = (endPoint.getTime() - startPoint.getTime()) / (1000 * 60 * 60 * 24);
-            console.log(daysLeft)
+
             return daysLeft
         }
         else {
@@ -23,7 +23,7 @@ const Task = (props) => {
             const endPoint = new Date(currentDate);
             const startPoint = new Date(endDate);
             const daysLeft = (startPoint.getTime() - endPoint.getTime()) / (1000 * 60 * 60 * 24);
-            // console.log(daysLeft)
+
             if (daysLeft < 0)
                 return <span className='expiredTask'> expired: {Math.abs(daysLeft)} {Math.abs(daysLeft) === 1 ? 'day ago' : 'days ago'}</span>
             else if (daysLeft === 0) { return <span className='daysLeft'> task for today</span> }

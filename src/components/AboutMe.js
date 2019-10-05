@@ -1,22 +1,12 @@
 import React, { Component } from 'react';
 import './AboutMe.css'
 import { FiGithub, FiLinkedin, FiSend, FiYoutube } from 'react-icons/fi';
-// import Img1 from '../img/face1.jpg'
 
 
 class AboutMe extends Component {
     state = {}
 
-    // backgndImageStyle = {
-    //     // style={{ backgroundImage: `url(${Img1})` }}
-    //     // backgroundImage: `url(${Img1})`,
-    //     backgroundPosition: 'center',
-    //     backgroundSize: 'cover',
-    //     backgroundRepeat: 'no-repeat',
-    //     backgroundColor: '76B5B0'
 
-
-    // }
     render() {
         return (
             <div className='aboutMeContainer'  >

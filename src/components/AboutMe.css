@@ -15,7 +15,7 @@
 .icons a {
     text-align: left;
     display: inline-block;
-    background-color: rgba(2, 2, 2, 0.486);
+    background-color: rgba(2, 2, 2, 0.342);
     width: 5rem;
     height: 5rem;
     text-align: center;
@@ -27,7 +27,7 @@
     color: white;
     padding: 15px;
     margin: 0 5%;
-    background-color: rgba(0, 0, 0, 0.493);
+    background-color: rgba(0, 0, 0, 0.418);
     text-align: justify;
 
 }
@@ -38,12 +38,12 @@
     margin: 10% 15%;
     font-size: 3rem;
     align-items: flex-start;
-    /* flex-grow: 1; */
+
 }
 
 
 .dialogue {
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgba(0, 0, 0, 0.322);
     /* flex-grow: 1; */
     flex-basis: 60%;
     padding: 0 20px;
@@ -104,7 +104,7 @@
 
     .dialogue {
         flex-basis: 90%;
-        background-color: #76B5B0;
+        background-color: rgba(118, 181, 176, 0.664);
 
     }
 
@@ -115,12 +115,6 @@
 
 @media (max-width:767px) and (orientation:landscape) {
 
-    /* .aboutMeContainer {
-
-        margin: 0;
-
-
-    } */
 
 
     .mediaContainer {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './AddTask.css'
-// import { FiGithub, FiLinkedin, FiSend, FiYoutube } from 'react-icons/fi';
+
 
 
 
@@ -15,26 +15,9 @@ class AddTask extends Component {
     }
 
 
-    // state = {
-    //     id: 6,
-    //     startDate: new Date().toISOString().slice(0, 10),
-    //     endDate: new Date().toISOString().slice(0, 10),
-    //     deadline: false,
-    //     priority: false,
-    //     body: '',
-    //     completed: false,
-
-    // }
-
     id = 1000
 
 
-
-    // componentWillReceiveProps = () => {
-
-    //     this.setState(this.props.taskToEdit)
-
-    // }
 
     static getDerivedStateFromProps(nextProps, prevState) {
         if (nextProps.taskToEdit.id !== prevState.id && nextProps.taskToEdit.edit) {
@@ -72,7 +55,6 @@ class AddTask extends Component {
             id: 0,
             startDate: new Date().toISOString().slice(0, 10),
             endDate: new Date().toISOString().slice(0, 10),
-            // endDate: this.state.startDate,
             deadline: false,
             priority: false,
             body: '',

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import './App.css';
 import './components/TodoTasks';
@@ -62,7 +62,7 @@ class App extends Component {
 
 
   completeTask = (id) => {
-    //    console.log('remove ' + id)
+
 
     const tasks = this.state.tasks.map(task => {
       if (task.id === id) {
@@ -103,20 +103,20 @@ class App extends Component {
     if (this.state.edition) { return }
 
     console.log('APP editTask ' + id)
-    // const taskToEdit = this.state.tasks.filter(task => task.id === id);
+
     const taskIndex = this.state.tasks.findIndex(task => task.id === id);
 
     console.log(taskIndex)
     this.setState({
-      // edition: !this.state.edition,
+
       edition: true,
       taskToEdit: this.state.tasks[taskIndex],
-      // tasks: !this.state.tasks[taskIndex].edit
+
     })
 
     window.scrollTo(0, 0);
-    // if (this.state.edition) { return }
-    // else
+
+
     this.removeTask(id)
 
   }
@@ -127,7 +127,7 @@ class App extends Component {
   render() {
     return (
 
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header />
         <Route path='/' exact render={() => (
           <div className="App">

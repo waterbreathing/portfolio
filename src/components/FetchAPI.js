@@ -23,11 +23,7 @@ class FetchAPI extends Component {
         display: 'flex',
         flexDirection: 'column'
 
-
     }
-
-
-
 
 
     getUsers = () => {
@@ -101,14 +97,6 @@ class FetchAPI extends Component {
                         )
                         .then((x) => {
                             if (weather.length % 5 === 0) {
-                                // console.log('to jest stan pogody przed jej dodaniem', this.state.weather)
-                                // console.log('to jest stan userow przed polaczeniem z pogoda', this.state.users)
-                                // console.log('to jest users + pogoda ze stanu', this.state.usersAndWeather)
-
-
-
-
-
 
                                 for (let i = this.state.users.length - 5; i < this.state.users.length; i++) {
 
@@ -122,8 +110,6 @@ class FetchAPI extends Component {
                                 }
 
 
-                                // console.log('to jest users + pogoda ze zmiennej do dolaczenia do stanu', usersAndWeather)
-                                // console.log('to jest users + pogoda ze stanu, do ktorego bedzie dołaczane', this.state.usersAndWeather)
 
                                 const weatherToAdd = usersAndWeather.filter(element => element !== undefined)
                                 this.setState({
@@ -151,13 +137,7 @@ class FetchAPI extends Component {
             }
             )
 
-
-
-
     }
-
-
-
 
 
     componentDidMount() {
@@ -175,7 +155,7 @@ class FetchAPI extends Component {
 
         const userElements = this.state.usersAndWeather.map(element => <User user={element.user} key={element.user.login.uuid} weatherX={element.weather} />)
 
-        // console.log('render usersandweather', this.state.usersAndWeather)
+
         return (
 
 

@@ -1,14 +1,11 @@
 .naviContainer {
     background-color: #731A06;
     margin-bottom: 10px;
-    /* border-bottom: 4px solid #888; */
     font-size: 1.5rem;
-    /* margin: 0 4%; */
 }
 
 .headerTopContainer {
     background-color: #76B5B0;
-    /* background-color: rgba(20, 20, 20, 0.253); */
     color: rgb(66, 73, 109);
     padding: 1% 0 1% 4%;
     /* margin: 0 4%; */
@@ -75,12 +72,3 @@ li:nth-child(3) .active {
         font-size: 1rem;
     }
 }
-
-/* @media (max-width:768px) {
-
-    .naviContainer,
-    .headerTopContainer {
-        margin: 0;
-    }
-
-} */

@@ -10,7 +10,7 @@ const User = (props) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
-    // console.log(props.weatherX.cod)
+
 
     const { name, location, login, picture } = props.user;
     const { coord, main, weather } = props.weatherX
