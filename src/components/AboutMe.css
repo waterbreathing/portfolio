@@ -27,8 +27,9 @@
     color: white;
     padding: 15px;
     margin: 0 5%;
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: rgba(0, 0, 0, 0.253);
     text-align: justify;
+    border-radius: 5px;
 
 }
 
@@ -43,7 +44,7 @@
 
 
 .dialogue {
-    background-color: rgba(0, 0, 0, 0.322);
+    background-color: rgba(0, 0, 0, 0.199);
     /* flex-grow: 1; */
     flex-basis: 60%;
     padding: 0 20px;
@@ -98,7 +99,7 @@
         width: 4rem;
         height: 4rem;
         line-height: 4rem;
-        color: rgba(255, 145, 0, 0.822);
+        color: rgba(255, 145, 0, 0.884);
     }
 
 

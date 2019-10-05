@@ -1,17 +1,24 @@
 .naviContainer {
     background-color: #731A06;
     margin-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .headerTopContainer {
     background-color: #76B5B0;
-    color: rgb(66, 73, 109);
+    color: rgb(56, 61, 90);
     padding: 1% 0 1% 4%;
     /* margin: 0 4%; */
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+}
+
+.headerTop {
+
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.527), 1px 1px 1px rgba(0, 0, 0, 0.253);
+
 }
 
 .naviList {
@@ -30,6 +37,8 @@
     padding-left: 20px;
 }
 
+
+
 li {
     flex-grow: 1;
 
@@ -42,6 +51,11 @@ a {
     text-decoration: none;
     padding: 5px 0;
 }
+
+a:hover {
+    color: #F0DCD7
+}
+
 
 li:nth-child(1) .active {
     color: white;
