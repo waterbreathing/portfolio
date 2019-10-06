@@ -145,7 +145,7 @@ class AddTask extends Component {
                             />
                         </span>
                         <span>
-                            <button className='priorityInactive btn submit' type='submit'>Submit</button>
+                            <button className='priorityInactive btn submit' type='submit'>SUBMIT</button>
                         </span>
                     </div>
                 </form>

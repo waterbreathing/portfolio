@@ -8,13 +8,14 @@
 
 .completed {
     padding: 10px;
-    background-color: #76B5B0;
+    background-color: rgb(161, 185, 183);
     border-bottom: 5px solid white
 }
 
 .taskBody {
-    font-size: 1.4rem;
-    color: #222;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(29, 28, 28);
     padding-bottom: 2%;
     border-bottom: 2px solid #4E567D
 }
@@ -69,11 +70,17 @@
     padding: 3px;
     font: inherit;
     font-size: 90%;
+    cursor: pointer;
 }
 
-.btnActiveTodos:hover {
-    background-color: #F0DCD7
+
+@media (hover:hover) {
+    .btnActiveTodos:hover {
+        background-color: #F0DCD7
+    }
+
 }
+
 
 @media (max-width:414px) {
 

@@ -6,20 +6,25 @@
 
 .headerTopContainer {
     background-color: #76B5B0;
-    color: rgb(56, 61, 90);
-    padding: 1% 0 1% 4%;
+
+    /* color: rgb(56, 61, 90); */
+    color: white;
+    padding: 1% 0 2% 4%;
     /* margin: 0 4%; */
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-size: .9rem;
 
 }
 
 .headerTop {
 
-    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.527), 1px 1px 1px rgba(0, 0, 0, 0.253);
 
+    text-shadow: rgb(110, 46, 31) 3px 3px 3px;
+    /* margin-bottom: 1%; */
 }
+
 
 .naviList {
     list-style: none;
@@ -52,9 +57,16 @@ a {
     padding: 5px 0;
 }
 
-a:hover {
-    color: #F0DCD7
+
+@media (hover:hover) {
+    a:hover {
+        color: #F0DCD7
+    }
+
+
 }
+
+
 
 
 li:nth-child(1) .active {
@@ -74,6 +86,13 @@ li:nth-child(3) .active {
     .headerTopContainer {
         font-size: 1rem;
         flex-wrap: wrap;
+
+    }
+
+    .headerTop {
+
+
+        padding-bottom: 3%;
 
     }
 

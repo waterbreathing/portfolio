@@ -30,7 +30,7 @@ class App extends Component {
         endDate: '2019-09-29',
         deadline: true,
         priority: false,
-        body: 'Compose a kind of folk trance music',
+        body: 'Compose a kind of groove music',
         completed: false,
         edit: true,
       },
@@ -128,30 +128,31 @@ class App extends Component {
     return (
 
       <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Header />
-        <Route path='/' exact render={() => (
-          <div className="App">
-            {this.state.edition ? <AddTask addTask={this.addTask} taskToEdit={this.state.taskToEdit} /> :
-              <AddTask addTask={this.addTask} taskToEdit={this.state.newTask}
-              />}
+        <div className='appContainer'>
+          <Header />
+          <Route path='/' exact render={() => (
+            <div className="App">
+              {this.state.edition ? <AddTask addTask={this.addTask} taskToEdit={this.state.taskToEdit} /> :
+                <AddTask addTask={this.addTask} taskToEdit={this.state.newTask}
+                />}
 
 
-            <h2 className='todoTasksHeader' >Todo tasks:</h2>
-            <TodoTasks tasks={this.state.tasks} removeTask={this.removeTask} completeTask={this.completeTask}
-              editTask={this.editTask}
-            />
-            <h2 className='todoTasksHeader'>Completed tasks:</h2>
-            <CompletedTasks tasks={this.state.tasks} removeTask={this.removeTask} />
+              <h2 className='todoTasksHeader' >TODO TASKS</h2>
+              <TodoTasks tasks={this.state.tasks} removeTask={this.removeTask} completeTask={this.completeTask}
+                editTask={this.editTask}
+              />
+              <h2 className='todoTasksHeader'>COMPLETED</h2>
+              <CompletedTasks tasks={this.state.tasks} removeTask={this.removeTask} />
 
-          </div>
-        )} />
+            </div>
+          )} />
 
-        <Route path='/fetchAPI' component={FetchAPI} />
-        <Route path='/aboutMe' component={AboutMe} />
-
-
+          <Route path='/fetchAPI' component={FetchAPI} />
+          <Route path='/aboutMe' component={AboutMe} />
 
 
+
+        </div>
       </BrowserRouter>
     );
   }

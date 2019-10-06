@@ -61,7 +61,7 @@ class FetchAPI extends Component {
 
                     // console.log(`numer: ${i}, latitude: ${latitude}, longitude: ${longitude}`)
 
-                    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&APPID=d351f368fe4ffd5173ebed33fd69d508&units=metric`)
+                    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&APPID=d351f368fe4ffd5173ebed33fd69d508&units=metric`)
 
                         .then(response => {
                             if (response.ok) {

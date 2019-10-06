@@ -8,11 +8,16 @@
     transition: .2s;
 }
 
-.loadMoreUsers:hover {
-    background-color: #BF6363;
-    color: #F2E1C2;
+
+@media (hover:hover) {
+    .loadMoreUsers:hover {
+        background-color: #BF6363;
+        color: #F2E1C2;
+
+    }
 
 }
+
 
 .disclaimer {
 

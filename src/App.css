@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.appContainer {
+  width: 80%;
+  margin: 1% auto;
+}
 
 .App {
   text-align: center;
@@ -16,5 +20,13 @@
   margin-top: 5px;
   color: #555;
 
+
+}
+
+@media(max-width:767px) {
+  .appContainer {
+    width: 100%;
+    margin: 0;
+  }
 
 }
