@@ -29,20 +29,20 @@ class AboutMe extends Component {
                     <div className="youTube icons"> <a rel="noopener noreferrer" href="https://www.youtube.com/watch?v=zGIp21wPNN0" target="_blank"><FiYoutube /></a></div>
 
                     <div className='aboutMe' >
-                        I am a front-end developer and I'm looking for my first internship or a job. I value good, honest and intuitive design as well as reliable operation of websites. I have strong fundamentals of JS, React, JQuery, SASS, Flexbox, Grid, Git, OOP, RWD, HTML, CSS and can use them in junior-level tasks.
-    I would like to join a creative team and increase my skills in front-end with an emphasis on JS and React.js. I'm currently exploring node.js, Express, mongoDB and React, React and more React. My personal interests include art, literature, photography and music composition. You can listen to my music by clicking on youTube icon.
+                        I am a Front-end developer and I'm looking for my first internship or a job. I value good, honest and intuitive design as well as reliable operation of websites. I have strong fundamentals of JS, ES6, React.js, JQuery, SASS, Flexbox, Grid, Git, OOP, RWD, HTML, CSS and a sense of design and I'm able to use them in junior-level tasks.
+    I would like to join a creative team and increase my skills in Front end with an emphasis on JS and React.js. I'm currently exploring node.js, Express, mongoDB and React, React and more React. My personal interests include art, literature, photography and music composition. You can listen to my music by clicking on youTube icon.
                     </div>
                     {/* <img src={Img1} alt="background" /> */}
                 </div>
                 <div className='dialogue' >
                     <p>Please tell me something about yourself.</p>
-                    <p>I come from Poland but I live in the Netherlands. I have graduated Medical University and I have worked several years as a doctor. And yet I devoted the entire last year to intensive IT learning and multiple courses on programming and frontend development.</p>
+                    <p>I come from Poland but I live in the Netherlands. I have graduated Medical University and I have worked several years as a doctor. And yet I devoted the entire last year to intensive IT learning and multiple courses on programming and Front-end engineering.</p>
                     <p>So you were involved in medicine. Why such a change?</p>
-                    <p>It was a difficult decision related to the so-called burnout in medicine. The overall data suggest that one third of doctors suffer from burnout, the main challenge is what they do about it. I decided to radically change my career path to more satisfying. I believe in chasing my dreams. It's stronger motivatior than money.</p>
+                    <p>It was a difficult decision related to the so-called burnout in medicine. The overall data suggest that one third of doctors suffer from burnout, the main challenge is what they do about it. I decided to radically change my career path to more satisfying. I believe in chasing my dreams. For me it's stronger motivator than money.</p>
                     <p>Why would you like to work in the IT industry? Do you have any experience in this?</p>
                     <p>I have always felt some interest for this industry. I find it very challenging intellectually and requiring continuous development, what I appreciate a lot. That is a career that offers a legitimate chance to perform meaningful work and develop a genuine passion for the job. My experience is not commercial but it is a year of daily implementation of my own test projects and tasks from the courses. That is why I am looking for an internship or my first job. This way you break vicious no-experience no-job circle, don't you? </p>
                     <p>Do you think that you will manage in a completely new industry? </p>
-                    <p>Absolutely yes. I often had to learn new difficult things, it always went quite smoothly. My professional career went well and I had some achievements. More importantly, I've never had conflicts with my colleagues or patients. </p>
+                    <p>Absolutely yes. I often had to learn new difficult things, it always went quite smoothly. My professional career went well and I had some achievements. More importantly, I've never had conflicts with my colleagues or clients. </p>
                     <p>What are your strengths? </p>
                     <p>I am diligent and conscientious. Always get the work done, almost never late at work. I’m also easy-going and creative, I often have a lot of ideas. I think I’m a fast learner and I can also share my knowledge (I worked with students).</p>
                     <p>What are your weaknesses then?</p>

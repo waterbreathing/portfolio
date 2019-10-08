@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap');
+
 .appContainer {
   width: 80%;
   margin: 1% auto;
+  font-family: 'Muli', sans-serif;
+
 }
 
 .App {
@@ -15,9 +19,9 @@
 }
 
 .todoTasksHeader {
-  padding: 10px 0;
+  padding: 7px 0;
   background-color: #F0DCD7;
-  margin-top: 5px;
+  margin-top: 10px;
   color: #555;
 
 

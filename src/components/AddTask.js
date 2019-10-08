@@ -141,7 +141,7 @@ class AddTask extends Component {
                         </span>
                         <span>
                             <input type="date" name="endDate" id="endDate" min={this.state.startDate}
-                                value={this.state.endDate} onChange={this.handleDeadline} className='btn'
+                                value={this.state.endDate} onChange={this.handleDeadline} className='btn' required
                             />
                         </span>
                         <span>
