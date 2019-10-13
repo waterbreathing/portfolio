@@ -30,6 +30,7 @@
     list-style: none;
     display: flex;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 .headerIcons {
@@ -46,6 +47,7 @@
 
 li {
     flex-grow: 1;
+    margin-right: 20px;
 
 }
 
@@ -80,6 +82,13 @@ li:nth-child(2) .active {
 li:nth-child(3) .active {
     color: #FF9100;
 }
+
+li:nth-child(4) .active {
+    color: #45BBC5;
+}
+
+
+
 
 @media (max-width:375px) {
 

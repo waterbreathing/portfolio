@@ -9,6 +9,7 @@ import AddTask from './components/AddTask'
 import Header from './components/Header'
 import FetchAPI from './components/FetchAPI'
 import AboutMe from './components/AboutMe'
+import Resistor from './components/Resistor'
 
 class App extends Component {
 
@@ -149,6 +150,7 @@ class App extends Component {
 
           <Route path='/fetchAPI' component={FetchAPI} />
           <Route path='/aboutMe' component={AboutMe} />
+          <Route path='/Resistance' component={Resistor} />
 
 
 

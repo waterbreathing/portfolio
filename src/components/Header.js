@@ -21,6 +21,7 @@ const Header = () => {
                 <ul className='naviList'>
                     <li>  <NavLink to='/' exact>TodoElastic</NavLink> </li>
                     <li>  <NavLink to='/fetchAPI' exact>FetchAPI</NavLink> </li>
+                    <li>  <NavLink to='/Resistance' exact>ResistorCalc</NavLink> </li>
                     <li>  <NavLink to='/aboutMe' exact>AboutMe</NavLink> </li>
 
                 </ul>

@@ -1,0 +1,110 @@
+.resistorColors {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sqr {
+
+    width: 30px;
+    height: 60px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin: 8px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: .1s;
+
+}
+
+.sqr.white {
+
+    color: black;
+}
+
+
+
+.refuse {
+    -webkit-box-shadow: -1px 2px 27px 6px rgba(245, 8, 8, 1);
+    -moz-box-shadow: -1px 2px 27px 6px rgba(245, 8, 8, 1);
+    box-shadow: -1px 2px 27px 6px rgba(245, 8, 8, 1);
+}
+
+.resOutput {
+    display: flex;
+    /* min-height: 2rem; */
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 5px 0;
+    padding: 0 10px;
+    /* border-top: 2px dotted darkgrey; */
+
+}
+
+
+.decodedResitor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 5px 0;
+    text-align: center;
+    background-color: wheat;
+}
+
+.lead {
+
+    width: 50px;
+    height: 5px;
+    border: 2px solid black;
+    /* transform: translateY(-13px) */
+}
+
+.resistorBody {
+
+
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 100px;
+    border: 2px solid black;
+
+
+}
+
+.resStripe {
+
+    height: 26px;
+    flex-basis: 10%;
+    /* background-color: burlywood; */
+}
+
+.resistorBtnContainer {
+    display: block;
+    width: 70%;
+    margin: 3% auto;
+    /* background-color: chocolate; */
+    text-align: center;
+
+}
+
+.resistorBtn:first-child {
+    margin-right: 3%;
+
+}
+
+.resistorBtn {
+    padding: .5rem .8rem;
+    font-size: 1rem;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.aboutResistors {
+    background-color: #76B5B0;
+    padding: 15px;
+    text-align: justify;
+}
